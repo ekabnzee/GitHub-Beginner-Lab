@@ -29,12 +29,17 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtStudentProfile = new System.Windows.Forms.TextBox();
+            this.lblStudentProfile = new System.Windows.Forms.Label();
+            this.lblContactNo = new System.Windows.Forms.Label();
+            this.txtContactNo = new System.Windows.Forms.TextBox();
+            this.lblHomeAddress = new System.Windows.Forms.Label();
+            this.txtHomeAddress = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(311, 197);
+            this.button1.Location = new System.Drawing.Point(275, 275);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 39);
             this.button1.TabIndex = 0;
@@ -42,20 +47,68 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // txtStudentProfile
             // 
-            this.textBox1.Location = new System.Drawing.Point(251, 125);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(274, 44);
-            this.textBox1.TabIndex = 1;
+            this.txtStudentProfile.Location = new System.Drawing.Point(47, 84);
+            this.txtStudentProfile.Multiline = true;
+            this.txtStudentProfile.Name = "txtStudentProfile";
+            this.txtStudentProfile.Size = new System.Drawing.Size(274, 44);
+            this.txtStudentProfile.TabIndex = 1;
+            // 
+            // lblStudentProfile
+            // 
+            this.lblStudentProfile.AutoSize = true;
+            this.lblStudentProfile.Location = new System.Drawing.Point(43, 52);
+            this.lblStudentProfile.Name = "lblStudentProfile";
+            this.lblStudentProfile.Size = new System.Drawing.Size(114, 20);
+            this.lblStudentProfile.TabIndex = 2;
+            this.lblStudentProfile.Text = "Student Profile";
+            // 
+            // lblContactNo
+            // 
+            this.lblContactNo.AutoSize = true;
+            this.lblContactNo.Location = new System.Drawing.Point(388, 52);
+            this.lblContactNo.Name = "lblContactNo";
+            this.lblContactNo.Size = new System.Drawing.Size(93, 20);
+            this.lblContactNo.TabIndex = 3;
+            this.lblContactNo.Text = "Contact No.";
+            // 
+            // txtContactNo
+            // 
+            this.txtContactNo.Location = new System.Drawing.Point(392, 84);
+            this.txtContactNo.Multiline = true;
+            this.txtContactNo.Name = "txtContactNo";
+            this.txtContactNo.Size = new System.Drawing.Size(274, 44);
+            this.txtContactNo.TabIndex = 4;
+            // 
+            // lblHomeAddress
+            // 
+            this.lblHomeAddress.AutoSize = true;
+            this.lblHomeAddress.Location = new System.Drawing.Point(43, 185);
+            this.lblHomeAddress.Name = "lblHomeAddress";
+            this.lblHomeAddress.Size = new System.Drawing.Size(115, 20);
+            this.lblHomeAddress.TabIndex = 5;
+            this.lblHomeAddress.Text = "Home Address";
+            // 
+            // txtHomeAddress
+            // 
+            this.txtHomeAddress.Location = new System.Drawing.Point(47, 225);
+            this.txtHomeAddress.Multiline = true;
+            this.txtHomeAddress.Name = "txtHomeAddress";
+            this.txtHomeAddress.Size = new System.Drawing.Size(274, 44);
+            this.txtHomeAddress.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtHomeAddress);
+            this.Controls.Add(this.lblHomeAddress);
+            this.Controls.Add(this.txtContactNo);
+            this.Controls.Add(this.lblContactNo);
+            this.Controls.Add(this.lblStudentProfile);
+            this.Controls.Add(this.txtStudentProfile);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -67,7 +120,12 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtStudentProfile;
+        private System.Windows.Forms.Label lblStudentProfile;
+        private System.Windows.Forms.Label lblContactNo;
+        private System.Windows.Forms.TextBox txtContactNo;
+        private System.Windows.Forms.Label lblHomeAddress;
+        private System.Windows.Forms.TextBox txtHomeAddress;
     }
 }
 
