@@ -19,7 +19,7 @@ namespace StudentProfile
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Student Profile - " + textBox1.Text);
+            MessageBox.Show("Student Profile - " + txtStudentProfile.Text + '\n' + "Contact No.: " + txtContactNo.Text);
         }
     }
 }
