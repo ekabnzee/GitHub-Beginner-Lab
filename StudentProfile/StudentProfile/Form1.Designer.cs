@@ -33,11 +33,13 @@
             this.lblStudentProfile = new System.Windows.Forms.Label();
             this.lblContactNo = new System.Windows.Forms.Label();
             this.txtContactNo = new System.Windows.Forms.TextBox();
+            this.lblHomeAddress = new System.Windows.Forms.Label();
+            this.txtHomeAddress = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(311, 197);
+            this.button1.Location = new System.Drawing.Point(275, 275);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 39);
             this.button1.TabIndex = 0;
@@ -79,11 +81,30 @@
             this.txtContactNo.Size = new System.Drawing.Size(274, 44);
             this.txtContactNo.TabIndex = 4;
             // 
+            // lblHomeAddress
+            // 
+            this.lblHomeAddress.AutoSize = true;
+            this.lblHomeAddress.Location = new System.Drawing.Point(43, 185);
+            this.lblHomeAddress.Name = "lblHomeAddress";
+            this.lblHomeAddress.Size = new System.Drawing.Size(115, 20);
+            this.lblHomeAddress.TabIndex = 5;
+            this.lblHomeAddress.Text = "Home Address";
+            // 
+            // txtHomeAddress
+            // 
+            this.txtHomeAddress.Location = new System.Drawing.Point(47, 225);
+            this.txtHomeAddress.Multiline = true;
+            this.txtHomeAddress.Name = "txtHomeAddress";
+            this.txtHomeAddress.Size = new System.Drawing.Size(274, 44);
+            this.txtHomeAddress.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtHomeAddress);
+            this.Controls.Add(this.lblHomeAddress);
             this.Controls.Add(this.txtContactNo);
             this.Controls.Add(this.lblContactNo);
             this.Controls.Add(this.lblStudentProfile);
@@ -103,6 +124,8 @@
         private System.Windows.Forms.Label lblStudentProfile;
         private System.Windows.Forms.Label lblContactNo;
         private System.Windows.Forms.TextBox txtContactNo;
+        private System.Windows.Forms.Label lblHomeAddress;
+        private System.Windows.Forms.TextBox txtHomeAddress;
     }
 }
 

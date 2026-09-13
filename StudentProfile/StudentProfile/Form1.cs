@@ -19,7 +19,8 @@ namespace StudentProfile
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Student Profile - " + txtStudentProfile.Text + '\n' + "Contact No.: " + txtContactNo.Text);
+            MessageBox.Show("Student Profile - " + txtStudentProfile.Text + '\n' + "Contact No.: " + txtContactNo.Text  + '\n'
+                + "Home Address: " + txtHomeAddress.Text);
         }
     }
 }
